@@ -5,7 +5,12 @@ Static website for Sepsensor, prepared for GitHub Pages.
 ## Structure
 
 - `index.html`: landing page
-- `styles.css`: site styles
+- `why-now.html`: problem / timing page
+- `il6.html`: assay rationale page
+- `technology.html`: product and architecture page
+- `progress.html`: traction and milestone page
+- `team.html`: team and contact page
+- `styles.css`: shared site styles
 - `script.js`: small interaction layer
 - `assets/`: public images used by the site
 - `.nojekyll`: prevents Jekyll processing on GitHub Pages

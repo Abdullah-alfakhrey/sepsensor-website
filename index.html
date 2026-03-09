@@ -3,512 +3,230 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sepsensor | Rapid bedside IL-6 testing with optical self-calibration</title>
+    <title>Sepsensor | Rapid bedside IL-6 sensing</title>
     <meta
       name="description"
-      content="Sepsensor is developing a validation-stage point-of-care biosensor for rapid bedside IL-6 testing, built around fluorescence imaging, a disposable microfluidic cartridge, and optical self-calibration."
+      content="Sepsensor is building a prototype bedside biosensor for rapid IL-6 sensing with a reusable reader, disposable cartridge, fluorescence imaging, and built-in self-calibration."
     >
     <meta property="og:title" content="Sepsensor">
     <meta
       property="og:description"
-      content="Rapid bedside IL-6 testing with optical self-calibration."
+      content="Prototype bedside IL-6 sensing with self-calibrating optical readout."
     >
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/device-crop.png">
+    <meta property="og:image" content="assets/bedside-device.png">
     <link rel="icon" href="assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="page-noise page-noise--one"></div>
-    <div class="page-noise page-noise--two"></div>
+    <div class="page-orb page-orb--one"></div>
+    <div class="page-orb page-orb--two"></div>
 
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Sepsensor home">
-          <img src="assets/logo.png" alt="Sepsensor logo">
+        <a class="brand" href="index.html" aria-label="Sepsensor home">
+          <span class="brand__badge">
+            <img src="assets/logo.png" alt="Sepsensor logo">
+          </span>
         </a>
 
         <nav class="site-nav" aria-label="Primary">
-          <a href="#why-now">Why now</a>
-          <a href="#il6">Why IL-6</a>
-          <a href="#technology">Technology</a>
-          <a href="#development">Development</a>
-          <a href="#team">Team</a>
+          <a href="index.html">Home</a>
+          <a href="why-now.html">Why now</a>
+          <a href="il6.html">Why IL-6</a>
+          <a href="technology.html">Technology</a>
+          <a href="progress.html">Progress</a>
+          <a href="team.html">Team</a>
         </nav>
 
-        <a class="button button--outline" href="#contact">Partner with us</a>
+        <a
+          class="button button--outline"
+          href="mailto:yazanbaseem.001@gmail.com?cc=alfakhrey.abdullah@gmail.com&subject=Sepsensor%20partnership%20enquiry"
+        >
+          Partner with us
+        </a>
       </header>
 
       <main>
-        <section class="hero" id="top">
+        <section class="hero">
           <div class="hero__copy" data-reveal>
-            <p class="eyebrow">Validation-stage medtech platform</p>
-            <h1>Rapid bedside IL-6 testing with optical self-calibration.</h1>
-            <p class="lead">
-              Sepsensor is developing a compact fluorescence reader plus
-              disposable microfluidic cartridge designed to deliver IL-6 results
-              in under 30 minutes near the patient. The central differentiator
-              is a built-in calibration reference intended to reduce drift,
-              cartridge-to-cartridge variation, and read-condition variability.
-            </p>
+            <p class="eyebrow">Prototype bedside biosensor</p>
+            <h1>Rapid bedside IL-6 sensing.</h1>
+            <p class="hero__tag">Minutes matter. Signal stability matters more.</p>
+
+            <ul class="bullet-list bullet-list--hero">
+              <li>
+                <strong>Reader + disposable cartridge.</strong>
+                <span>Reusable hardware. Single-use assay path.</span>
+              </li>
+              <li>
+                <strong>Fluorescence + image processing.</strong>
+                <span>Camera-led optical workflow from sample to signal.</span>
+              </li>
+              <li>
+                <strong>Self-calibration built in.</strong>
+                <span>Ratio-based correction is part of the assay logic.</span>
+              </li>
+              <li>
+                <strong>Prototype built.</strong>
+                <span>Validation work is active. No public lab dataset is shown here.</span>
+              </li>
+            </ul>
 
             <div class="hero__actions">
-              <a class="button" href="#technology">Explore the technology</a>
-              <a
-                class="button button--ghost"
-                href="mailto:yazanbaseem.001@gmail.com?cc=alfakhrey.abdullah@gmail.com&amp;subject=Sepsensor%20partnership%20enquiry"
-              >
-                Partner with us
-              </a>
+              <a class="button" href="technology.html">Explore the technology</a>
+              <a class="button button--ghost" href="progress.html">See progress</a>
             </div>
 
-            <div class="hero__signal">
-              <article class="signal-card">
-                <strong>Under 30 minutes</strong>
-                <span>Target bedside turnaround from sample to result</span>
-              </article>
-              <article class="signal-card">
-                <strong>IL-6 first assay</strong>
-                <span>Focused first biomarker for platform validation</span>
-              </article>
-              <article class="signal-card">
-                <strong>Prototype in validation</strong>
-                <span>Not a commercially approved medical device</span>
-              </article>
+            <div class="chip-row">
+              <span class="chip">Under 30 minute target</span>
+              <span class="chip">IL-6 first assay</span>
+              <span class="chip">University-linked testing</span>
             </div>
           </div>
 
-          <div class="hero__visual" data-reveal style="--delay: 0.08s">
-            <div class="device-card">
-              <div class="device-card__stage">Current stage: functional prototype under test</div>
-              <img src="assets/device-crop.png" alt="Sepsensor device concept render">
-            </div>
+          <figure class="media-panel media-panel--hero" data-reveal style="--delay: 0.08s">
+            <img src="assets/bedside-device.png" alt="Sepsensor bedside device render with product callouts">
+          </figure>
+        </section>
 
-            <div class="proof-card">
-              <h2>Why believe it now</h2>
-              <ul>
-                <li>Founded in 2022 to commercialise a self-calibrating sepsis biosensor platform.</li>
-                <li>Functional prototype under testing, with data collection underway for validation and IP development.</li>
-                <li>Current experiments run through University of Glasgow-linked lab collaboration.</li>
-                <li>Supported by £40,000 from Infinity G and Wilson’s Foundry to help build a functional prototype.</li>
+        <section class="section">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Explore</p>
+            <h2>Short pages. Sharp story.</h2>
+          </div>
+
+          <div class="card-grid card-grid--two">
+            <a class="card card--link" href="why-now.html" data-reveal>
+              <p class="card__kicker">Why now</p>
+              <h3>Lab delay blunts the signal.</h3>
+              <ul class="bullet-list">
+                <li>
+                  <strong>Hours instead of minutes.</strong>
+                  <span>Central-lab dependence still slows early action.</span>
+                </li>
+                <li>
+                  <strong>Bedside timing is the wedge.</strong>
+                  <span>Near-patient readout is the point of the product.</span>
+                </li>
               </ul>
-            </div>
+            </a>
+
+            <a class="card card--link" href="il6.html" data-reveal style="--delay: 0.04s">
+              <p class="card__kicker">Why IL-6</p>
+              <h3>One marker. Clear starting point.</h3>
+              <ul class="bullet-list">
+                <li>
+                  <strong>IL-6 first.</strong>
+                  <span>A focused assay before broader biomarker expansion.</span>
+                </li>
+                <li>
+                  <strong>Sharper clinical story.</strong>
+                  <span>Built around sepsis severity and outcome relevance.</span>
+                </li>
+              </ul>
+            </a>
+
+            <a class="card card--link" href="technology.html" data-reveal style="--delay: 0.08s">
+              <p class="card__kicker">Technology</p>
+              <h3>Reader. Cartridge. Self-calibration.</h3>
+              <ul class="bullet-list">
+                <li>
+                  <strong>Camera + optical filters.</strong>
+                  <span>Fluorescence capture with software-led readout.</span>
+                </li>
+                <li>
+                  <strong>Disposable microfluidics.</strong>
+                  <span>Sample operations stay inside the cartridge.</span>
+                </li>
+              </ul>
+            </a>
+
+            <a class="card card--link" href="progress.html" data-reveal style="--delay: 0.12s">
+              <p class="card__kicker">Progress</p>
+              <h3>Prototype on bench. Partners around it.</h3>
+              <ul class="bullet-list">
+                <li>
+                  <strong>Functional prototype.</strong>
+                  <span>Validation and iteration are ongoing.</span>
+                </li>
+                <li>
+                  <strong>Real programme momentum.</strong>
+                  <span>Progress is framed around traction, validation, and build.</span>
+                </li>
+              </ul>
+            </a>
           </div>
         </section>
 
-        <section class="trust-strip" data-reveal>
-          <span>University of Glasgow lab collaboration</span>
-          <span>Infinity G</span>
-          <span>Wilson’s Foundry</span>
-          <span>STAC Cohort 6</span>
-          <span>Pre-turnover startup</span>
-        </section>
-
-        <section class="section" id="why-now">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow--light">Why now</p>
-            <h2>The workflow gap is not only diagnostic. It is operational.</h2>
-            <p>
-              Sepsensor is being built around a simple clinical-commercial
-              problem: when biomarker results arrive hours later, treatment and
-              observation decisions are already being made. That weakens the
-              value of the signal and increases pressure on teams, pathways, and
-              hospital resources.
-            </p>
+        <section class="section">
+          <div class="section-head section-head--narrow" data-reveal>
+            <p class="eyebrow">Prototype view</p>
+            <h2>Cartridge in. Result out.</h2>
           </div>
 
-          <div class="why-layout">
-            <div class="stats-grid" data-reveal>
-              <article class="stat-card">
-                <strong>~12 hours</strong>
-                <span>Current lab-scale turnaround referenced in project materials</span>
-              </article>
-              <article class="stat-card">
-                <strong>Under 30 minutes</strong>
-                <span>Sepsensor target for near-patient IL-6 readout</span>
-              </article>
-              <article class="stat-card">
-                <strong>~£2 billion / year</strong>
-                <span>Sepsis-related NHS cost cited across the project materials</span>
-              </article>
-            </div>
+          <div class="split-layout">
+            <article class="card card--accent" data-reveal>
+              <p class="card__kicker">Current stage</p>
+              <h3>Built to show the workflow, not to overclaim it.</h3>
+              <ul class="bullet-list">
+                <li>
+                  <strong>Functional prototype.</strong>
+                  <span>Hardware and assay direction are already visible.</span>
+                </li>
+                <li>
+                  <strong>Validation language only.</strong>
+                  <span>No public lab-data or regulatory-performance claims on this site.</span>
+                </li>
+                <li>
+                  <strong>Pilot preparation next.</strong>
+                  <span>Clinical fit, partner building, and translation stay front of mind.</span>
+                </li>
+              </ul>
 
-            <div class="problem-grid">
-              <article class="problem-card" data-reveal style="--delay: 0.05s">
-                <h3>Delayed biomarker action</h3>
-                <p>
-                  The challenge is not simply diagnosis in the abstract. It is
-                  whether the biomarker result can arrive while escalation,
-                  observation, and antibiotic decisions are still open.
-                </p>
-              </article>
-
-              <article class="problem-card" data-reveal style="--delay: 0.1s">
-                <h3>Central-lab dependence</h3>
-                <p>
-                  Lab batching and turnaround can push early-stage sepsis
-                  decisions back toward conservative treatment rather than
-                  informed bedside response.
-                </p>
-              </article>
-
-              <article class="problem-card" data-reveal style="--delay: 0.15s">
-                <h3>Variation limits decentralisation</h3>
-                <p>
-                  Point-of-care testing is only useful if the system can handle
-                  cartridge variation, optical drift, and read-condition changes
-                  without becoming calibration-heavy in daily use.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--il6" id="il6">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow--light">Why IL-6 first</p>
-            <h2>A disciplined first assay, not a vague platform story.</h2>
-            <p>
-              Sepsensor is not trying to launch with an undifferentiated
-              biomarker panel. The first focus is IL-6 because it gives the team
-              a clinically relevant, technically specific starting point for
-              validating the reader, cartridge workflow, and calibration
-              architecture.
-            </p>
-          </div>
-
-          <div class="il6-grid">
-            <article class="il6-card" data-reveal style="--delay: 0.03s">
-              <h3>Clinically relevant first signal</h3>
-              <p>
-                Project materials consistently position IL-6 as a strong marker
-                for sepsis severity and outcome tracking, making it a credible
-                first assay target rather than a placeholder biomarker.
-              </p>
-            </article>
-
-            <article class="il6-card" data-reveal style="--delay: 0.08s">
-              <h3>Focused validation pathway</h3>
-              <p>
-                Starting with one assay makes it easier to validate optics,
-                surface chemistry, cartridge flow, and signal-processing logic
-                before expanding toward multi-marker use.
-              </p>
-            </article>
-
-            <article class="il6-card" data-reveal style="--delay: 0.13s">
-              <h3>Sharper commercial wedge</h3>
-              <p>
-                IL-6-first gives Sepsensor a clearer translational story for
-                clinical collaborators, grant reviewers, and early partners than
-                a broad “future platform” message alone.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="technology" id="technology">
-          <div class="technology__intro" data-reveal>
-            <p class="eyebrow">Technology</p>
-            <h2>The differentiator is not just fluorescence. It is how the read is stabilised.</h2>
-            <p>
-              Sepsensor combines a reader, a disposable cartridge, fluorescence
-              imaging, and signal processing. The feature that should be easiest
-              to remember is the self-calibration layer built into the assay
-              logic itself.
-            </p>
-          </div>
-
-          <div class="technology__layout">
-            <div class="diagram-card" data-reveal style="--delay: 0.04s">
-              <h3>Plain-English workflow</h3>
-              <div class="diagram">
-                <div class="diagram__node">Blood sample enters cartridge</div>
-                <div class="diagram__arrow">→</div>
-                <div class="diagram__node">Reader captures fluorescence image</div>
-                <div class="diagram__arrow">→</div>
-                <div class="diagram__node-group">
-                  <div class="diagram__node diagram__node--small">IL-6 detection signal</div>
-                  <div class="diagram__node diagram__node--small">Calibration reference signal</div>
-                </div>
-                <div class="diagram__arrow">→</div>
-                <div class="diagram__node">Ratio-corrected output for a more stable read</div>
+              <div class="chip-row">
+                <span class="chip">Prototype</span>
+                <span class="chip">Validation</span>
+                <span class="chip">Pilot preparation</span>
               </div>
-              <p class="diagram-card__note">
-                The goal is to compare the assay signal against a reference
-                inside the same workflow, rather than depending on external
-                recalibration every time conditions shift.
-              </p>
-            </div>
+            </article>
 
-            <div class="technology__stack">
-              <article class="tech-card" data-reveal style="--delay: 0.08s">
-                <h3>How self-calibration works</h3>
-                <p>
-                  In plain terms, Sepsensor is designed so the test read includes
-                  both a biomarker signal and a reference signal. Comparing the
-                  two helps correct for variation caused by cartridge build,
-                  optical drift, or read conditions.
-                </p>
-              </article>
-
-              <article class="tech-card tech-card--accent" data-reveal style="--delay: 0.12s">
-                <h3>Technical explanation</h3>
-                <p>
-                  Project materials describe a dedicated calibration fluorophore
-                  linked into the assay architecture. The reader uses a
-                  ratiometric comparison between detection and calibration
-                  channels to compensate for measurement and manufacturing
-                  variation.
-                </p>
-              </article>
-
-              <article class="tech-card tech-card--note" data-reveal style="--delay: 0.16s">
-                <h3>What we are not claiming</h3>
-                <p>
-                  The site is not presenting clinical performance numbers,
-                  diagnostic accuracy claims, or regulatory approval status. The
-                  current position is validation-stage prototype development.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--platform">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow--light">Platform and differentiation</p>
-            <h2>Reader, cartridge, optical path, and workflow fit.</h2>
-            <p>
-              The platform story becomes stronger when the reader architecture,
-              cartridge workflow, and workflow advantage are described together,
-              not as separate pieces of jargon.
-            </p>
-          </div>
-
-          <div class="platform-layout">
-            <figure class="platform-visual" data-reveal>
-              <img src="assets/biosensor-model.png" alt="Sepsensor optical model" loading="lazy">
-              <figcaption>
-                Prototype optical architecture used to shape the current reader
-                direction.
-              </figcaption>
-            </figure>
-
-            <div class="platform-stack">
-              <article class="platform-card" data-reveal style="--delay: 0.05s">
-                <h3>Reader</h3>
-                <p>
-                  A compact fluorescence reader captures the assay image and
-                  feeds the signal-processing workflow.
-                </p>
-              </article>
-
-              <article class="platform-card" data-reveal style="--delay: 0.09s">
-                <h3>Disposable cartridge</h3>
-                <p>
-                  The cartridge contains the test path and sample operations,
-                  keeping the hardware reusable while preserving a practical
-                  point-of-care format.
-                </p>
-                <img src="assets/cartridge.png" alt="Sepsensor cartridge concept" loading="lazy">
-              </article>
-
-              <article class="platform-card platform-card--compare" data-reveal style="--delay: 0.13s">
-                <h3>Why Sepsensor is different</h3>
-                <div class="compare-grid">
-                  <div class="compare-grid__head">Workflow question</div>
-                  <div class="compare-grid__head">Typical central-lab dependence</div>
-                  <div class="compare-grid__head">Sepsensor target approach</div>
-
-                  <div class="compare-grid__label">Where the result is generated</div>
-                  <div>Centralised workflow and batching</div>
-                  <div>Near-patient fluorescence readout</div>
-
-                  <div class="compare-grid__label">Turnaround ambition</div>
-                  <div>Hours-scale result path</div>
-                  <div>Under-30-minute bedside target</div>
-
-                  <div class="compare-grid__label">Managing variation</div>
-                  <div>External quality control burden remains high</div>
-                  <div>Built-in calibration reference designed into the assay</div>
-
-                  <div class="compare-grid__label">Platform direction</div>
-                  <div>Single workflow, limited bedside flexibility</div>
-                  <div>IL-6 first, broader biomarker path later</div>
+            <div class="media-grid">
+              <figure class="media-figure" data-reveal style="--delay: 0.05s">
+                <div class="media-panel">
+                  <img src="assets/cartridge-insert.png" alt="Sepsensor device with cartridge being inserted">
                 </div>
-              </article>
+                <figcaption>Cartridge loading concept.</figcaption>
+              </figure>
+
+              <figure class="media-figure" data-reveal style="--delay: 0.1s">
+                <div class="media-panel">
+                  <img src="assets/results-display.png" alt="Sepsensor device front view showing the results display">
+                </div>
+                <figcaption>Results display concept.</figcaption>
+              </figure>
             </div>
-          </div>
-        </section>
-
-        <section class="section" id="development">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow--light">Development stage</p>
-            <h2>Concrete progress, without pretending the device is finished.</h2>
-            <p>
-              Sepsensor should read as a serious translation-stage startup:
-              something real has been built and tested, but the project is still
-              in prototype validation rather than commercial deployment.
-            </p>
-          </div>
-
-          <div class="development-layout">
-            <article class="stage-card" data-reveal>
-              <h3>Current status</h3>
-              <p>
-                Sepsensor is a prototype platform in validation. It is not yet a
-                commercially approved medical device.
-              </p>
-              <ul>
-                <li>Functional prototype under testing</li>
-                <li>Assay chemistry and binding workflow under active development</li>
-                <li>University lab collaboration supporting current experiments</li>
-                <li>Current focus on internal validation, partner building, and pilot readiness</li>
-              </ul>
-            </article>
-
-            <div class="milestone-grid">
-              <article class="milestone" data-reveal style="--delay: 0.04s">
-                <h3>Founded in 2022</h3>
-                <p>Created to commercialise a self-calibrating biosensor for rapid sepsis testing.</p>
-              </article>
-
-              <article class="milestone" data-reveal style="--delay: 0.08s">
-                <h3>Functional prototype developed</h3>
-                <p>Project materials state that a functional prototype has been built and is being tested.</p>
-              </article>
-
-              <article class="milestone" data-reveal style="--delay: 0.12s">
-                <h3>Current lab validation work</h3>
-                <p>University of Glasgow-linked experiments continue to support assay and optical validation.</p>
-              </article>
-
-              <article class="milestone" data-reveal style="--delay: 0.16s">
-                <h3>Cartridge and casing iteration</h3>
-                <p>Cartridge formats and enclosure files have been iterated alongside the reader concept.</p>
-              </article>
-
-              <article class="milestone" data-reveal style="--delay: 0.2s">
-                <h3>£40,000 programme support</h3>
-                <p>Infinity G and Wilson’s Foundry support helped fund prototype-building and business development.</p>
-              </article>
-
-              <article class="milestone" data-reveal style="--delay: 0.24s">
-                <h3>Next milestone</h3>
-                <p>Prototype validation with lab data, deeper partnerships, and preparation for pilot-ready translation.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--pathways">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow--light">Use cases and partnership pathways</p>
-            <h2>Clear reasons for different audiences to engage.</h2>
-            <p>
-              The site should not ask every visitor to care for the same reason.
-              Sepsensor is relevant to clinical collaborators, technical
-              partners, and translational supporters in different ways.
-            </p>
-          </div>
-
-          <div class="pathway-layout">
-            <div class="pathway-panel" data-reveal>
-              <h3>Where the platform could fit first</h3>
-              <ul>
-                <li>Emergency and acute care workflows where faster biomarker input may influence escalation.</li>
-                <li>ICU or ward-based monitoring support where serial bedside reads could be useful.</li>
-                <li>Hospital workflows that need decentralised turnaround rather than central-lab batching.</li>
-                <li>Future multi-biomarker expansion once the IL-6-first architecture is validated.</li>
-              </ul>
-            </div>
-
-            <div class="pathway-panel pathway-panel--accent" data-reveal style="--delay: 0.08s">
-              <h3>Who Sepsensor wants to hear from</h3>
-              <ul>
-                <li>Clinical collaborators who can help shape validation and workflow fit.</li>
-                <li>Assay development and bioengineering partners with surface chemistry expertise.</li>
-                <li>Microfluidics, cartridge, and manufacturing partners for translation beyond the lab.</li>
-                <li>Accelerators, grant reviewers, and early supporters focused on translational medtech.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--team" id="team">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow eyebrow--light">Team and advisors</p>
-            <h2>Assay, optics, electronics, chemistry, and translation in one group.</h2>
-            <p>
-              The project materials present Sepsensor as a multidisciplinary
-              effort, combining biosensor development with engineering,
-              electronics, and academic guidance rather than treating it as a
-              single-discipline research exercise.
-            </p>
-          </div>
-
-          <div class="team-grid">
-            <article class="team-card" data-reveal style="--delay: 0.02s">
-              <h3>Yazan Haidar</h3>
-              <p class="team-card__meta">MEng Biomedical Engineering</p>
-              <p>Bio-assay and external programme leadership.</p>
-            </article>
-
-            <article class="team-card" data-reveal style="--delay: 0.06s">
-              <h3>Abdullah AlFakhrey</h3>
-              <p class="team-card__meta">MSc Robotics and AI</p>
-              <p>Detection system, imaging workflow, and prototype integration.</p>
-            </article>
-
-            <article class="team-card" data-reveal style="--delay: 0.1s">
-              <h3>Tao Xu</h3>
-              <p class="team-card__meta">PhD Candidate, Biomedical Engineering</p>
-              <p>Surface chemistry and assay development.</p>
-            </article>
-
-            <article class="team-card" data-reveal style="--delay: 0.14s">
-              <h3>Jaswinder Singh</h3>
-              <p class="team-card__meta">MSc Biomedical Engineering</p>
-              <p>Electronics and supporting system development.</p>
-            </article>
-
-            <article class="team-card" data-reveal style="--delay: 0.18s">
-              <h3>Prof. Julien Reboud</h3>
-              <p class="team-card__meta">Professor in BioSystems Engineering</p>
-              <p>Scientific advisor supporting assay and translational direction.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="cta" id="contact" data-reveal>
-          <div class="cta__copy">
-            <p class="eyebrow">Contact</p>
-            <h2>Looking for clinical, technical, and translational partners.</h2>
-            <p>
-              Sepsensor is currently best suited to conversations around
-              validation, assay development, pilot planning, microfluidics,
-              manufacturing, and medtech translation support.
-            </p>
-          </div>
-
-          <div class="cta__actions">
-            <a class="button" href="mailto:yazanbaseem.001@gmail.com">Email Yazan</a>
-            <a class="button button--ghost" href="mailto:alfakhrey.abdullah@gmail.com">Email Abdullah</a>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>Sepsensor</p>
-        <p>Prototype in validation. Not a commercially approved medical device.</p>
+        <div>
+          <p class="site-footer__title">Sepsensor</p>
+          <p>Prototype in validation. Not a commercially approved medical device.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:yazanbaseem.001@gmail.com">Yazan</a>
+          <a href="mailto:alfakhrey.abdullah@gmail.com">Abdullah</a>
+        </div>
       </footer>
     </div>
   </body>
