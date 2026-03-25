@@ -9,29 +9,24 @@
       content="Sepsensor combines fluorescence imaging, a disposable cartridge, and ratio-based self-calibration in a prototype bedside platform."
     >
     <meta property="og:title" content="Sepsensor | Technology">
-    <meta property="og:description" content="Optics. Cartridge. Self-calibration.">
+    <meta property="og:description" content="Reader, optics, cartridge, and calibration.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/exploded-system.png">
     <link rel="icon" href="assets/logo-badge.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="page-orb page-orb--one"></div>
-    <div class="page-orb page-orb--two"></div>
-
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="index.html" aria-label="Sepsensor home">
-          <span class="brand__badge">
-            <img src="assets/logo-badge.svg" alt="Sepsensor logo">
-          </span>
+          <img src="assets/logo.png" alt="Sepsensor logo">
         </a>
 
         <nav class="site-nav" aria-label="Primary">
@@ -44,55 +39,118 @@
         </nav>
 
         <a
-          class="button button--outline"
+          class="button button--ghost"
           href="mailto:yazanbaseem.001@gmail.com?cc=alfakhrey.abdullah@gmail.com&subject=Sepsensor%20partnership%20enquiry"
         >
           Partner
         </a>
       </header>
 
-      <main>
-        <section class="page-hero">
-          <div class="page-hero__copy" data-reveal>
-            <p class="eyebrow">Technology</p>
-            <h1>Stable optical read.</h1>
-            <p class="hero__tag">Camera. Filters. Cartridge. Self-calibration.</p>
+      <main class="site-main">
+        <section class="section-frame section-frame--dark">
+          <div class="page-intro__grid">
+            <div class="page-intro__copy" data-reveal>
+              <p class="eyebrow">Technology</p>
+              <h1 class="display display--page">Reader, optics, cartridge, and calibration in one system.</h1>
+              <p class="lede">
+                Sepsensor combines fluorescence imaging with a disposable assay cartridge and a
+                ratio-based calibration strategy. The page is organized to explain how those layers
+                work together as a bedside platform.
+              </p>
 
-            <ul class="minimal-list">
-              <li><strong>Fluorescence imaging.</strong></li>
-              <li><strong>Disposable microfluidic cartridge.</strong></li>
-              <li><strong>Ratio-based self-calibration.</strong></li>
-            </ul>
+              <div class="status-row">
+                <span class="status-chip">Fluorescence imaging</span>
+                <span class="status-chip">Disposable microfluidic cartridge</span>
+                <span class="status-chip">Ratio-based self-calibration</span>
+              </div>
+            </div>
+
+            <div class="page-intro__aside">
+              <figure class="image-panel" data-reveal style="--delay: 0.04s">
+                <img src="assets/exploded-system.png" alt="Exploded view of the Sepsensor optical system">
+              </figure>
+            </div>
           </div>
-
-          <figure class="media-panel" data-reveal style="--delay: 0.08s">
-            <img src="assets/exploded-system.png" alt="Exploded view of Sepsensor optical system">
-          </figure>
         </section>
 
-        <section class="section">
-          <div class="image-strip">
-            <figure class="media-figure" data-reveal>
-              <div class="media-panel">
-                <img src="assets/cartridge-insert.png" alt="Cartridge inserted into Sepsensor reader">
-              </div>
-              <figcaption><strong>Disposable cartridge.</strong></figcaption>
-            </figure>
+        <section class="section-frame">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Architecture</p>
+            <h2>The technology story is clearer when each layer has a defined role.</h2>
+            <p>
+              The redesign separates optical readout, consumable workflow, and calibration logic so
+              the platform feels like a real product architecture rather than a collection of parts.
+            </p>
+          </div>
 
-            <figure class="media-figure" data-reveal style="--delay: 0.06s">
-              <div class="media-panel">
-                <img src="assets/biosensor-model.png" alt="Biosensor model concept">
+          <div class="pillar-grid">
+            <article class="panel" data-reveal>
+              <span class="label">Detection</span>
+              <h3>Optical readout</h3>
+              <p>The reader is presented as a defined imaging system built around bedside usability.</p>
+            </article>
+
+            <article class="panel" data-reveal style="--delay: 0.04s">
+              <span class="label">Workflow</span>
+              <h3>Cartridge handling</h3>
+              <p>The disposable cartridge makes the operating model concrete and easier to understand.</p>
+            </article>
+
+            <article class="panel" data-reveal style="--delay: 0.08s">
+              <span class="label">Stability</span>
+              <h3>Self-calibration</h3>
+              <p>Ratio-based correction is shown as core product logic that supports more reliable readout.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-frame section-frame--muted">
+          <div class="split-layout">
+            <div class="split-copy" data-reveal>
+              <p class="eyebrow">Physical system</p>
+              <h2 class="section-title">The prototype now reads like a coherent device program.</h2>
+              <p class="body-copy">
+                Cartridge insertion, sensing geometry, and the biosensor architecture are shown
+                together so the website communicates a more mature engineering story.
+              </p>
+
+              <div class="detail-list">
+                <article class="detail-item">
+                  <strong>Optics and mechanics</strong>
+                  <p>The exploded system image clarifies how illumination, filtering, and actuation fit together.</p>
+                </article>
+
+                <article class="detail-item">
+                  <strong>Consumable interaction</strong>
+                  <p>Cartridge visuals ground the prototype in a real user workflow instead of abstract hardware talk.</p>
+                </article>
+
+                <article class="detail-item">
+                  <strong>System credibility</strong>
+                  <p>Showing component logic helps position Sepsensor as a serious medtech build effort.</p>
+                </article>
               </div>
-              <figcaption><strong>Optical architecture.</strong></figcaption>
-            </figure>
+            </div>
+
+            <div class="visual-stack">
+              <figure class="image-panel" data-reveal style="--delay: 0.04s">
+                <img src="assets/cartridge-insert.png" alt="Cartridge inserted into the Sepsensor reader">
+              </figure>
+
+              <figure class="image-panel" data-reveal style="--delay: 0.08s">
+                <img src="assets/biosensor-model.png" alt="Sepsensor biosensor model concept">
+              </figure>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
+        <img src="assets/logo.png" alt="Sepsensor logo">
+
         <div>
-          <p class="site-footer__title">Sepsensor</p>
-          <p>Prototype in validation. Not a commercially approved medical device.</p>
+          <p class="site-footer__title">Prototype in validation.</p>
+          <p>Sepsensor is not a commercially approved medical device.</p>
         </div>
 
         <div class="footer-links">
